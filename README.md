@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
+#Used Modules
+1)Angular
+2)Bootstrap4 & Scss
+3)DragDropModule from @angular/cdk/drag-drop
+4)NgbModule for popover (You can find it on click of More Info...)
+5)Angular-material
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
