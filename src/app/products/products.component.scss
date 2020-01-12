@@ -1,0 +1,208 @@
+.products{
+    width:100%;
+    background-color: #e3e3e3;
+    font-family: sans-serif;
+
+    .container-fluid{
+        padding: 0px;
+    }
+    .header-section{
+        height: 90px;
+        background-color: #000;
+        display:flex;
+        color: #fff;
+        justify-content: space-between;
+        position: relative;
+        .logo-content{
+            font-size: 30px;
+            margin: 1% !important;
+            margin-left: 3% !important;
+            z-index: 1;
+            background-color: #000;
+            height: 40px;
+            margin-top: 1.7% !important;
+        }
+        .span-block{
+            width:60px;
+            height: 60px;
+            border: 4px solid #09b7db;
+            position: absolute;
+            top: 16%;
+            left: 1%;
+        }
+        .terms {
+            margin-bottom: 0rem !important;
+            margin: 2% !important;
+            font-size: 18px;
+        }
+    }
+
+    ul.tabs-block{
+        list-style-type: none;
+        display: flex;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+        background-color: #2b3a47;
+        margin-top: 2%;
+        li{
+            cursor: pointer;
+            color: #fff;
+            padding: 2%;
+            font-size: 18px;
+        }
+    }
+    
+    ul.product-list{
+        list-style-type: none;
+        padding: 0px;
+        width: 100%;
+        margin: auto;
+        li{
+            cursor: pointer;
+            height: 280px;
+            background-color: #fff;
+            border: 2px solid #eee;
+            border-radius: 5px;
+            border-bottom: 3px solid #2b3a47;
+            margin-bottom: 1%;
+        }
+        .more-ifo{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8%;
+            font-weight: 600;
+            span{
+                color:#212529;
+                display: flex;
+            }
+        }
+
+        .product-block{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1%;
+            border-bottom: 1px solid #2b3a47;
+
+            .product-name{
+                color: #fb0606;
+                margin-bottom: 0px;
+            }
+            .offer{
+                width:10%;
+                color: #fff;
+                background-color: #2b3a47;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 11px;
+                padding: 2px;
+                margin-bottom: 3px;
+                font-weight: 600;
+            }    
+        }
+        img{
+            width: 60%;
+            height: 60%;
+            margin-top: 2%;
+        }
+    }
+    .active{
+        background-color: #09b7db;
+    }
+}
+@media (max-width: 480px) {
+.products{
+    .header-section{
+        height: 40px;
+        .span-block{
+            width: 30px;
+            height: 30px;
+            border: 2px solid #09b7db;
+            position: absolute;
+            top: 18%;
+            left: 2%;
+        }
+        .logo-content{
+            font-size: 16px;
+            margin: 1% !important;
+            margin-left: 6% !important;
+            z-index: 1;
+            background-color: #000;
+            height: 20px;
+            margin-top: 3% !important;
+        }
+        .terms {
+            margin: 3% !important;
+            font-size: 10px;
+        }
+        ul.tabs-block{
+            list-style-type: none;
+            display: flex;
+            padding: 0px;
+            margin: auto;
+            width: 100%;
+            background-color: #2b3a47;
+            margin-top: 2%;
+            li{
+                cursor: pointer;
+                color: #fff;
+                margin: 1%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .product-block{
+        .offer{
+            font-size: 8px;
+            font-weight: 500;
+        }
+    }
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .products{
+        .header-section{
+            height: 50px;
+            .span-block{
+                width: 35px;
+                height: 35px;
+                border: 3px solid #09b7db;
+                position: absolute;
+                top: 16%;
+                left: 2%;
+            }
+            .logo-content{
+                font-size: 16px;
+                margin: 1% !important;
+                margin-left: 4% !important;
+                z-index: 1;
+                background-color: #000;
+                height: 20px;
+                margin-top: 2% !important;
+            }
+        }
+        ul.tabs-block{
+            list-style-type: none;
+            display: flex;
+            padding: 0px;
+            margin: auto;
+            width: 100%;
+            background-color: #2b3a47;
+            margin-top: 2%;
+            li{
+                cursor: pointer;
+                color: #fff;
+                margin: 1%;
+                font-size: 16px;
+            }
+        }
+        .product-block{
+            .offer{
+                font-size: 8px;
+                font-weight: 500;
+            }
+        }
+    }
+}

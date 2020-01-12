@@ -1,0 +1,37 @@
+<div class="products">
+  <div class="container-fluid">
+    <div class="header-section">
+      <span class="span-block"></span>
+      <p class="logo-content">Cloud Elements</p>
+      <p class="terms">Terms of Service | Privacy Policy</p>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="tabs-block">
+      <li class="active" id="general" (click)="getTabData('general')">General</li>
+      <li id="other" (click)="getTabData('others')">Others</li>
+    </ul>
+    <ul class="row product-list" cdkDropList (cdkDropListDropped)="onDrop($event)">
+      <li *ngFor="let item of products" cdkDrag class="col-md-4 col-xs-12 col-sm-3">
+        <div class="product-block">
+          <p class="product-name">{{item.name | uppercase}}</p>
+          <p class="offer">Off 40%</p>
+        </div>
+        <img [src]="item.image" class="mx-auto d-block"/>
+        <div class="more-ifo">
+          <p>&#x20b9; 75,00</p>
+          <p container="body" [autoClose]="'outside'"
+          [ngbPopover]="popContent"
+          #closePop="ngbPopover" placement="bottom">
+            <span><i class="material-icons">error_outline</i> More Info...</span>
+            <ng-template #popContent>
+              <h5 style="text-transform: capitalize;">Product Type : {{item.hub}}</h5>
+              <hr>
+              <p>{{item.description}}</p>
+            </ng-template>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
