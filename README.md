@@ -8,6 +8,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3)DragDropModule from @angular/cdk/drag-drop
 4)NgbModule for popover (You can find it on click of More Info...)
 5)Angular-material
+6)Jquery
+
+If you get any error related to Drag n Drop please update angular/cli and angular/core.
+
+npm update @angular/cli @angular/core
 
 ## Development server
 
